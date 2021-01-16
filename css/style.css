@@ -171,3 +171,166 @@ img{
 .bottom .btn {
     border-radius: 50px;
 }
+
+.services {
+    background: #111;
+}
+
+.heading.white p{
+    color: #fff;
+
+}
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx {
+    color: #fff;
+    background: #161616;
+    margin: 10px 15px;
+    padding: 30px 15px;
+    text-align: center;
+    border-bottom: 3px solid #161616;
+}
+
+.services .content .servicesBx:hover {
+    border-bottom: 3px solid #DAA520;
+    cursor: pointer;
+}
+.services i {
+    font-size: 60px;
+    color: #DAA520;
+}
+
+.work .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work .content .workBox{
+    width: 600px;
+    padding: 20px;
+}
+
+.work .content .workBox img {
+    max-width: 100%;
+    border: 1px solid rgba(0,0,0,.4);
+}
+
+.work .content .workBox img:hover{
+    box-shadow:  0 0 20px 5px #ccc;
+    transform: scale(1.008);
+    transition: .5s;
+}
+
+.work .content .workBox p{
+    text-align: center;
+}
+
+.work .content .workBox a:link,
+.work .content .workBox a:visited,
+.work .content .workBox a:active
+{
+    color: #161616;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.education{
+    background: #111;
+}
+.education .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.education .content .educationBox{
+    background: #161616;
+    margin: 20px;
+    padding: 60px 40px;
+    max-width: calc(50% - 40px);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    cursor: pointer;
+
+}
+
+.education .content .educationBox:hover{
+    border-bottom: 2px solid #DAA520;
+}
+.education .content .educationBox p{
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Times New Roman", Times, Serif;
+    line-height: 24px;
+}
+
+.education .content .educationBox h3{
+    color: #DAA520;
+    margin-top: 40px;
+    text-align: end;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 1.7em;
+}
+
+.contact {
+    background: #111;
+}
+
+.contact .formBox {
+    min-width: 60%;
+
+}
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBox form input,
+.formBox form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #161616;
+    color: #fff;
+    resize: vertical;
+}
+
+.formBox form input:focus,
+.formBox form textarea:focus{
+    border-bottom: 1px solid #DAA520;
+    transition: .5s;
+}
+
+.formBox form input::placeholder,
+.formBox form textarea::placeholder{
+    color: #999;
+}
+.formBox form input[type="submit"] {
+    background: #DAA520;
+    max-width: 250px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+
+}
