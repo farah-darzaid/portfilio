@@ -1,0 +1,173 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin:  0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 25px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky .logo,
+header.sticky a{
+    color: #111111;
+}
+section {
+    padding: 80px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    background: url("../images/farah.jpg") no-repeat;
+    background-size: cover;
+    background-position: right -400px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    color: #efefef;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.2em;
+    color: #efefef;
+}
+
+.banner h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+ .btn {
+    position: relative;
+    background: #DAA520;
+    color: #efefef;
+    text-decoration: none;
+    margin-top:20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.text {
+    background: rgba(1,1,1,0.2);
+    position: absolute;
+    top: 50%;
+
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.heading h2 {
+    font-size: 3em;
+    color: #DAA520;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .contentBx {
+    padding-left: 40px;
+    text-align: justify;
+}
+
+.content .poPic {
+    width: 250px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.contentBx h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contentBx .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bt {
+    margin-top: 20px;
+}
+
+.w50 {
+    min-width: 25%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.bottom .btn {
+    border-radius: 50px;
+}
