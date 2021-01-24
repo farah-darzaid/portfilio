@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif ;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -68,9 +69,9 @@ section {
     justify-content: space-between;
     align-items: center;
     background: #111;
-    background: url("../images/farah.jpg") no-repeat;
+    background: url("../images/resume.jpg") no-repeat;
     background-size: cover;
-    background-position: right -400px;
+    background-position: right -15px;
 }
 
 .banner h2 {
@@ -108,6 +109,7 @@ section {
     background: rgba(1,1,1,0.2);
     position: absolute;
     top: 50%;
+    padding: 10px;
 
 }
 
@@ -172,7 +174,7 @@ img{
     border-radius: 50px;
 }
 
-.services {
+.skills {
     background: #111;
 }
 
@@ -180,14 +182,14 @@ img{
     color: #fff;
 
 }
-.services .content {
+.skills .content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.services .content .servicesBx {
+.skills .content .servicesBx {
     color: #fff;
     background: #161616;
     margin: 10px 15px;
@@ -196,11 +198,11 @@ img{
     border-bottom: 3px solid #161616;
 }
 
-.services .content .servicesBx:hover {
+.skills .content .servicesBx:hover {
     border-bottom: 3px solid #DAA520;
     cursor: pointer;
 }
-.services i {
+.skills i {
     font-size: 60px;
     color: #DAA520;
 }
@@ -215,7 +217,10 @@ img{
 .work .content .workBox{
     width: 600px;
     padding: 20px;
+    text-align: center;
 }
+
+
 
 .work .content .workBox img {
     max-width: 100%;
@@ -239,6 +244,11 @@ img{
     color: #161616;
     text-decoration: none;
     font-weight: 600;
+}
+.work .content .workBox .certificate:link,
+.work .content .workBox .certificate:active,
+.work .content .workBox .certificate:visited {
+    color: #DAA520;
 }
 
 .education{
@@ -332,5 +342,206 @@ img{
     cursor: pointer;
     font-weight: 600;
     border-radius: 50px;
+    letter-spacing: 2px;
 
 }
+
+.contactInfo {
+    min-width: 40%;
+}
+
+.contactInfo p {
+    color: #999999;
+}
+
+.contactInfoBox {
+    position: relative;
+}
+.contactInfoBox .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBox .box .icon {
+    color: #fff;
+    min-width: 40px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfoBox .box .conttext{
+    color: #999999;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;;
+    font-weight: 300;
+}
+
+.contactInfoBox .box .conttext p,address {
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+
+}
+
+.contactInfoBox .box .conttext h3{
+    color: #DAA520;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contactInfoBox .boxSocial {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    letter-spacing: 15px;
+}
+
+.contactInfoBox .boxSocial .fab{
+    font-size: 42px;
+    color: #DAA520;
+    cursor: pointer;
+}
+
+footer.copyright {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 20px 50px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .menu {
+        position: fixed;
+        background: #fff;
+        display: block;;
+        top: 75px;
+        left: -100%;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    header .menu.active {
+        position: fixed;
+        background: #fff;
+        display: block;;
+        top: 75px;
+        left: 0;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        transition: 0.5s;
+    }
+
+    header ul li a {
+        font-size: 20px;
+        color: #111;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background-image: url("../images/menu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+
+    }
+
+    .toggle.active {
+        width: 40px;
+        height: 40px;
+        background-image: url("../images/close.png");
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+        font-size: 1.5em;
+    }
+
+    .banner h3{
+        font-size: 1em;
+    }
+
+    #home .text{
+        position: relative;
+        top: 190px;
+        padding: 5% 5% 3% 5%;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .contentBx {
+        padding: 0;
+    }
+
+    .content .w50 img {
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+
+    .contentBx h2 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .contentBx h3 {
+        font-size: 20px;
+
+    }
+
+    .heading h2 {
+        font-size: 24px;
+    }
+
+    .education .content {
+        display: block;
+    }
+
+    .education .content .educationBox{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+

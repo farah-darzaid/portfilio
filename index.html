@@ -8,17 +8,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="js/main.js" language="JavaScript"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
 <header>
     <a href="" class="logo">Portfolio</a>
+
+    <div class="toggle" id="toggle"></div>
+
     <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#word">Work</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
@@ -44,7 +47,7 @@
 
         <div class="content">
             <div class="w50">
-                <img src="images/aboutimg.jpg" alt="" class="poPic" width="200">
+                <img src="images/farah.jpg" alt="" class="poPic" width="200">
             </div>
 
             <div class="contentBx w50">
@@ -60,7 +63,7 @@
                     dynamic organization.</p>
 
                 <div class="heading bottom">
-                    <a href="images/resume.docs" target="_blank" class="btn">
+                    <a href="images/farah's%20CV.pdf" target="_blank" class="btn">
                         Download CV
                     </a>
 
@@ -77,7 +80,7 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="skills" id="skills">
         <div class="heading white">
             <h2>My Skills</h2>
             <p>What I Worked With</p>
@@ -138,9 +141,12 @@
             </div>
 
             <div class="workBox">
-                <a href="https://github.com/farah-darzaid/capstone-Project" target="_blank">
-                    <img src="images/laravel-logo%20.png" alt="Not Found">
-                    <p>Multi Services Website</p>
+                <a href="https://github.com/farah-darzaid/portfilio" target="_blank">
+                    <img src="images/cv-project.png" alt="Not Found">
+                    <p>Create CV Template as website </p>
+                    <a target="_blank" class="certificate" href="https://udemy-certificate.s3.amazonaws.com/image/UC-f6a08ef0-b3b8-4687-ac0e-24f4de8f54bf.jpg">
+                        Udemy Course Certificate
+                    </a>
                 </a>
             </div>
 
@@ -174,13 +180,18 @@
 
         <div class="content">
             <div class="educationBox">
-                <p>High SchoolHigh SchoolHigh SchoolHigh SchoolHigh SchoolHigh SchoolHigh School</p>
+                <p>High SchoolHigh </p>
                 <h3>Sukaina Bent AlHusain School<br>Scientific section</h3>
             </div>
 
             <div class="educationBox">
-                <p>UniversityUniversityUniversityUniversityUniversityUniversityUniversityUniversity</p>
+                <p>University</p>
                 <h3>Al-Balqa'a Applies University<br>Computer Science</h3>
+            </div>
+
+            <div class="educationBox">
+                <p>ICT NATIONAL UPSKILLING PROGRAMME</p>
+                <h3>Al Hussein Technical University<br>FULL STACK WEB DEVELOPMENT</h3>
             </div>
         </div>
     </section>
@@ -231,26 +242,29 @@
                     <br>
                     <h3>Social Connect</h3>
 
-                    <div class="icon">
-                        <a href="https://www.facebook.com" target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/farah-darzaid" target="_blank">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/farah-dar-zaid-2949ab187/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="icon">
-                        <a href="https://www.github.com" target="_blank">
-                            <i class="fab fa-github-square"></i>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://www.twitter.com" target="_blank">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
+
 
 
                 </div>
@@ -262,13 +276,16 @@
 
                     <input type="text" placeholder="Full Name" name="name">
                     <input type="email" placeholder="Email" name="email">
-                    <textarea name="message" id="message" placeholder="Your Message">
+                    <textarea name="message" id="message" placeholder="Your Message" rows="7"></textarea>
 
-                        </textarea>
                     <input type="submit" value="Send Message">
                 </form>
             </div>
         </div>
     </section>
+
+    <footer class="copyright">
+        <p>&copy; 2020, Farah's CV</p>
+    </footer>
 </body>
 </html>
